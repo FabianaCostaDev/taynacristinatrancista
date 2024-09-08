@@ -1,0 +1,320 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    padding-top: 80px; /* Ajuste para compensar a altura do cabeçalho fixo */
+}
+
+header {
+    background-color: rgba(156, 39, 176, 0.8); /* Roxo clarinho translúcido */
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Garantir que o cabeçalho fique sobre outros elementos */
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title, .subtitle {
+    margin: 0;
+    font-family: 'Great Vibes', cursive; /* Fonte cursiva */
+    color: #fff; /* Cor do texto */
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /* Borda preta fina */
+}
+
+.title {
+    font-size: 3em;
+}
+
+.subtitle {
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.hero {
+    margin-top: 80px; /* Espaço para o header fixo */
+    background-image: url('imagem-destaque.jpg'); /* Substitua pela imagem de destaque */
+    background-size: cover;
+    background-position: center;
+    color: hsl(0, 2%, 9%);
+    height: 400px; /* Ajuste a altura conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 60px 20px; /* Ajusta o padding */
+    text-align: center;
+}
+
+/* Seção Portfolio */
+.portfolio {
+    padding-top: 20px; /* Reduzi o espaço acima da galeria */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Seção Contato */
+#contact {
+    background-color: #f5f5f5;
+    padding: 60px;
+    text-align: center;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-icons a {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-icons p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4a3f73;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+/* Adicione esse CSS ao existente para a página de serviços */
+.services {
+    padding: 80px 20px; /* Ajusta o padding para não ficar grudado no cabeçalho */
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.services p {
+    font-size: 1.2em;
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ajuste para a página de portfólio */
+/* Ajuste para a página de portfólio */
+/* Ajuste para a página de portfólio */
+.portfolio {
+    padding: 100px 20px; /* Adiciona um espaçamento adequado abaixo do cabeçalho */
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-family: 'Great Vibes', cursive; /* Fonte cursiva */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.portfolio .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
+    gap: 15px; /* Espaço entre as fotos */
+    justify-content: center; /* Centraliza o grid */
+    margin: 0 auto; /* Centraliza o grid dentro da seção */
+}
+
+.portfolio .gallery .gallery-item {
+    position: relative;
+    overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+    text-align: center; /* Centraliza o texto */
+}
+
+.portfolio .gallery img {
+    width: 100%; /* Garante que a imagem preencha a largura do contêiner */
+    height: 200px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Faz com que a imagem cubra o contêiner, mantendo a proporção */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.portfolio .gallery h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: 'Great Vibes', cursive; /* Fonte cursiva para os títulos */
+}
+
+
+.Instagramport {
+    text-align: center;
+}
+
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5em;
+    }
+
+    .subtitle {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .portfolio {
+        padding: 40px 10px;
+    }
+
+    .portfolio h2 {
+        font-size: 2em;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gallery img {
+        height: 150px;
+    }
+
+    #contact {
+        padding: 40px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .hero {
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .portfolio h2 {
+        font-size: 1.5em;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+        height: 120px;
+    }
+
+    #contact {
+        padding: 30px 5px;
+    }
+}
